@@ -33,7 +33,7 @@ export default function ContactPage() {
       const response = await fetch(GOOGLE_SHEETS_URL, {
         method: "POST",
         mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "text/plain" },
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
